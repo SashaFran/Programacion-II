@@ -12,14 +12,14 @@ public class Seleccion{
 	private boolean disponible;
 	protected ArrayList<Futbolista> futbolistas;
 	protected ArrayList<Masajista> masajistas;
-	protected ArrayList<CuerpoTecnico> entrenadores;
+	protected ArrayList<Entrenador> entrenadores; 
 
 	
 
 	public Seleccion(){
 		futbolistas = new ArrayList<Futbolista>();
 		masajistas = new ArrayList<Masajista>();
-		entrenadores = new ArrayList<CuerpoTecnico>();
+		entrenadores = new ArrayList<Entrenador>();
 		
 	}
 	
@@ -39,8 +39,8 @@ public class Seleccion{
 		return new ArrayList<Masajista>(masajistas);
 	}
 
-	public ArrayList<CuerpoTecnico> getEntrenador() {
-		return new ArrayList<CuerpoTecnico>(entrenadores);
+	public ArrayList<Entrenador> getEntrenador() {
+		return new ArrayList<Entrenador>(entrenadores);
 	}
 
 	public String getNombre() {
@@ -72,8 +72,6 @@ public class Seleccion{
 	}
 	
 	public boolean isDisponible() {
-		//esto devuelve true solo si la persona esta
-		//en el pais de origen y no concentrado.
 		if ((getEstado() == 'P')&&(getEstado() != 'C')&&(getEstado() != 'V')){
 			disponible = true;
 		}else{
@@ -84,6 +82,24 @@ public class Seleccion{
 	
 	public char getEstado() {
 		return estado;
+	}
+	
+	public void addFutbolista(Futbolista ff){
+		for (int i=0; i<futbolistas.size(); i++){
+			futbolistas.add(ff);
+		}
+	}
+	
+	public void addMasajista(Masajista mm){
+		for (int i=0; i<masajistas.size(); i++){
+			masajistas.add(mm);
+		}
+	}
+	
+	public void addEntrenador(Entrenador ee){
+		for (int i=0; i<entrenadores.size(); i++){
+			entrenadores.add(ee);
+		}
 	}
 	
 	
