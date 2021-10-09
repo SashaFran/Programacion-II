@@ -4,6 +4,12 @@
 	<classpathentry kind="src" path="practica3"/>
 	<classpathentry kind="src" path="practica4"/>
 	<classpathentry kind="src" path="practica5"/>
+	<classpathentry kind="src" path="practica6"/>
+	<classpathentry kind="src" path="clase 28_09"/>
+	<classpathentry kind="src" path="practica7"/>
+	<classpathentry kind="src" path="clase05_10"/>
+	<classpathentry kind="src" path="clase20210930"/>
+	<classpathentry kind="src" path="TPE"/>
 	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
