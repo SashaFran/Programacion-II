@@ -21,7 +21,7 @@ public class CriterioSinonimo extends CriterioDiccionario{
 
 	@Override
 	public boolean existe(Palabra p) {
-		return p.getAntonimo().equals(palabra);
+		return p.getAntonimos().equals(palabra);
 	}
 
 }

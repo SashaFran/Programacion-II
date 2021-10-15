@@ -1,19 +1,20 @@
 package biblioteca.criterioBiblioteca;
 
+import java.util.Comparator;
+
 import biblioteca.Libro;
 
-public class ComparadorAñoEdicion extends ComparadorBase{
+//public class ComparadorAñoEdicion extends ComparadorBase{
 
-	public ComparadorAñoEdicion(){
-		
-	}
+public class ComparadorAñoEdicion implements Comparator<Libro>{
 	
-	public ComparadorAñoEdicion(ComparadorBase siguiente){
+	
+	/*public ComparadorAñoEdicion(ComparadorBase siguiente){
 		super(siguiente);
-	}
+	}*/
 
 	@Override
-	public int comparador(Libro l, Libro l1) {
+	public int compare(Libro l, Libro l1) {
 		return l.getAñoDePublicacion() - l1.getAñoDePublicacion();
 	}
 
