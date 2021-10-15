@@ -2,6 +2,7 @@ package reality;
 
 import java.util.ArrayList;
 
+
 public class Coach {
 
 	private String nombre, apellido;
@@ -39,6 +40,12 @@ public class Coach {
 	un listado de géneros de preferencia de los participantes de su equipo (sin repetidos y
 	ordenados alfabéticamente)
 	El promedio de edad de su equipo*/
+	
+	
+	/*	public List<Participante> getParticipantesPorIdioma(String idioma){
+		System.out.println("\nIdioma: "+idioma+"\n");
+		return equipo.buscar(new CriterioPorIdioma(idioma.(....)));
+	}*/
 	
 	
 }

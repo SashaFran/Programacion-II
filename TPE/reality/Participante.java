@@ -4,6 +4,8 @@ import java.time.LocalDate;
 import java.time.Period;
 import java.util.ArrayList;
 
+//equals 
+
 public class Participante {
 
 	private String nombre, apellido;
