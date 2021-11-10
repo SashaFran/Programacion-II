@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="src" path="practica3"/>
-	<classpathentry kind="src" path="practica4"/>
-	<classpathentry kind="src" path="practica5"/>
 	<classpathentry kind="src" path="practica6"/>
 	<classpathentry kind="src" path="clase 28_09"/>
 	<classpathentry kind="src" path="practica7"/>
 	<classpathentry kind="src" path="clase20210930"/>
-	<classpathentry kind="src" path="TPE"/>
-	<classpathentry kind="src" path="clase20211005"/>
-	<classpathentry kind="src" path="clase20211012"/>
 	<classpathentry kind="src" path="parciales"/>
 	<classpathentry kind="src" path="practica8"/>
+	<classpathentry kind="src" path="tpe"/>
+	<classpathentry kind="src" path="practica9"/>
+	<classpathentry kind="src" path="empresa"/>
+	<classpathentry kind="src" path="parcial2021"/>
+	<classpathentry kind="src" path="parcialito4"/>
+	<classpathentry kind="src" path="Parcial2020"/>
+	<classpathentry kind="src" path="Prefinal2020"/>
+	<classpathentry kind="src" path="adicionalPractica"/>
 	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

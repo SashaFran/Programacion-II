@@ -1,3 +1,5 @@
+package parcialFormulaMatematica;
+
 import java.util.ArrayList;
 
 public abstract class ElementMatematico{

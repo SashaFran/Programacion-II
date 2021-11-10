@@ -1,6 +1,8 @@
 package parcialSistemaPostal;
 
 
+import java.util.ArrayList;
+
 import parcialSistemaPostal.criterio.*;
 
 
@@ -27,7 +29,11 @@ public class Main {
 		comboEmpresarial.agregarEnvio(e2);
 		comboEmpresarial.agregarEnvio(e4);
 		comboEmpresarial.agregarEnvio(e3);
+		
 		Criterio c3 = new CriterioPesoMayorA(5);
+		ArrayList<Envio> envio1 = comboEmpresarial.listarEnvios(c3);
+		System.out.println("Envio por peso mayor a 5: "+envio1);
+		
 		comboPostal.agregarEnvio(e1);
 		comboPostal.agregarEnvio(e3);
 		comboPostal.agregarEnvio(e2);

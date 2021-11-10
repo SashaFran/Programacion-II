@@ -16,5 +16,6 @@ public class MainVocabulario {
 		//System.out.println(v.frecuenciadeXPalabra(p));
 		System.out.println(v.ordenarListaporFrecuencia());
 		System.out.println(v.ordenarAlfabeticamente());
+		System.out.println("Cantidad de palabra: "+p.getCantidad());
 	}
 }

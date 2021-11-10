@@ -18,6 +18,10 @@ public class Grupo extends ElementGrupo{
 		criterio=c;
 	}
 	
+	public String getNombre() {
+		return nombre;
+	}
+
 	public void agregarHijo(ElementGrupo e) {
 		if (!grupos.contains(e)){
 			grupos.add(e);
@@ -73,7 +77,7 @@ public class Grupo extends ElementGrupo{
 	}
 
 	@Override
-	public ArrayList<Empleado> ListaEmpleadosOrdenado(Criterio c, Comparator t) {
+	public ArrayList<Empleado> ListaEmpleadosOrdenado(Criterio c, Comparator<Empleado> t) {
 		ArrayList<Empleado>listaTotal= new ArrayList<>();
 		for (ElementGrupo e: grupos) {
 			if (!listaTotal.contains(e)) {

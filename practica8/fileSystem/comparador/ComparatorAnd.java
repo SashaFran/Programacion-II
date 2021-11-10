@@ -7,11 +7,11 @@ import fileSystem.ElementFileSystem;
 public class ComparatorAnd implements Comparator<ElementFileSystem> {
 
 	private Comparator<ElementFileSystem> com1;
-	private Comparator com2;
+	private Comparator<ElementFileSystem> com2;
 	
-	public ComparatorAnd(Comparator com11, Comparator com22) {
-		this.com1=com11;
-		this.com2=com22;
+	public ComparatorAnd(Comparator<ElementFileSystem> com1, Comparator<ElementFileSystem> com2) {
+		this.com1=com1;
+		this.com2=com2;
 	}
 	
 	@Override

@@ -17,7 +17,7 @@ public class Farmacia {
     }
 
     public ArrayList<Medicamento> buscar(Criterio criterio){
-        ArrayList<Medicamento> losQueCumplen = new ArrayList();
+        ArrayList<Medicamento> losQueCumplen = new ArrayList<>();
         for (Medicamento m: medicamentos) //foreach
             if (criterio.cumple(m))
                 losQueCumplen.add(m);

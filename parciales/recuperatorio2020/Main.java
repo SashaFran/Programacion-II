@@ -1,5 +1,7 @@
 package recuperatorio2020;
 
+import java.util.ArrayList;
+
 import recuperatorio2020.criterio.*;
 
 
@@ -48,9 +50,17 @@ public class Main {
 	Criterio criterioContrajoEnfermedad= new CriterioContrajoEnfermedad();
 	CriterioAnd criterioAnd2= new CriterioAnd(criterioVacuna, criterioContrajoEnfermedad);
 	Criterio criterioAnd= new CriterioAnd(criterioEnfermedad,criterioAnd2);
+	ArrayList<Voluntario> vv1 = grupo1.ListaVoluntariosVacuna(criterioAnd);
+	System.out.println("Criterio and: "+vv1);
+	
 	Criterio criterioEdad= new CriterioEdad(25);
+	ArrayList<Voluntario> vv2 = grupo1.ListaVoluntariosVacuna(criterioEdad);
+	System.out.println("Criterio edad: "+vv2);
+	
 	Criterio criterioGenero= new CriterioGenero("femenino");
 	Criterio criterioAnd3= new CriterioAnd(criterioGenero,criterioEnfermedad);
+	ArrayList<Voluntario> vv3 = grupo1.ListaVoluntariosVacuna(criterioAnd3);
+	System.out.println("Nuevo criterio and (genero): "+vv3);
 
 	
 	System.out.println("la cantidad de voluntarios son: "+grupoTandil.cantidadVoluntarios());

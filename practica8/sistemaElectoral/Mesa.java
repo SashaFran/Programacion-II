@@ -1,7 +1,8 @@
-package Ejercicio2SistemaElectoral;
-
+package sistemaElectoral;
 import java.util.ArrayList;
 import java.util.Collections;
+
+import sistemaElectoral.criterios.Criterio;
 
 public class Mesa extends ElementoElectoral {
 	private String nombre;

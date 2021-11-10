@@ -1,23 +1,33 @@
-package Ejercicio2SistemaElectoral;
+
+package sistemaElectoral;
 
 import java.util.ArrayList;
 import java.util.Collections;
 
+import sistemaElectoral.criterios.Criterio;
+
 public class Establecimiento extends ElementoElectoral {
 	private String nombre;
 	private ArrayList<ElementoElectoral>lugar;
+	private ArrayList<Candidato> candidatos;
 	
 	
-	
+
 	public Establecimiento(String nombre) {
 		this.nombre=nombre;
-		lugar= new ArrayList<>();
+		this.lugar = new ArrayList<>();
+		this.candidatos = new ArrayList<>();
 	}
 	
 	
 	public void agregarLugar(ElementoElectoral l) {
 		lugar.add(l);
 	}
+	
+	public void addCandidato(Candidato c){
+		candidatos.add(c);
+	}
+
 
 	public double porcentajeporCriterio(Criterio criterio) {
 		double prom=0;
@@ -51,8 +61,7 @@ public class Establecimiento extends ElementoElectoral {
 
 	@Override
 	public String getNombre() {
-		// TODO Auto-generated method stub
-		return null;
+		return nombre;
 	}
 
 
@@ -69,6 +78,7 @@ public class Establecimiento extends ElementoElectoral {
 			}
 		
 		}
+		Collections.sort(listaCandidatos);
 		return listaCandidatos;
 	}
 	

@@ -1,8 +1,6 @@
 package workBreakDown;
 
 
-import java.util.ArrayList;
-
 public class RecursoExclusivo extends Recurso {
 	
 	

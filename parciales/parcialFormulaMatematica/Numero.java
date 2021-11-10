@@ -1,3 +1,4 @@
+package parcialFormulaMatematica;
 import java.util.ArrayList;
 
 public class Numero  extends ElementMatematico{

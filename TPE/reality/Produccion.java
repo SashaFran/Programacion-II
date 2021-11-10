@@ -1,11 +1,7 @@
 package reality;
 
 import java.util.ArrayList;
-
-/*La producción también almacena un conjunto de temas musicales que pueden 
-ser cantados durante el reality.*/
-
-public class Produccion extends Reality{
+public class Produccion{
 
 	private ArrayList<TemaMusical> temas;
 	
@@ -18,5 +14,8 @@ public class Produccion extends Reality{
 			temas.add(tm);
 		}
 	}
+
+	
+	
 	
 }

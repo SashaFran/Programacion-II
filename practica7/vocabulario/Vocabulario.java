@@ -2,7 +2,6 @@ package vocabulario;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Comparator;
 import java.util.StringTokenizer;
 
 import vocabulario.criterios.ComparatorFrecuencia;

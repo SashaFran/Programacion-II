@@ -1,6 +1,5 @@
-package Ejercicio2SistemaElectoral;
+package sistemaElectoral;
 
-import java.time.LocalDate;
 import java.time.LocalTime;
 
 public class Voto{

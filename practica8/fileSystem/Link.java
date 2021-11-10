@@ -4,9 +4,9 @@ import java.util.ArrayList;
 import fileSystem.criterios.Criterio;
 
 public class Link extends ElementFileSystem {
+	
+	
 	private ElementFileSystem aloqueapunta;
-	
-	
 	
 	public Link(String nombre,ElementFileSystem e) {
 		super(nombre);
@@ -14,6 +14,11 @@ public class Link extends ElementFileSystem {
 	}
 
 	
+	public ElementFileSystem getAloqueapunta() {
+		return aloqueapunta;
+	}
+
+
 	@Override
 	public double getTamanio() {
 		return 1;

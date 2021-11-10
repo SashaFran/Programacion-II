@@ -104,7 +104,7 @@ public class Empleado extends ElementGrupo implements Comparable<Empleado>{
 
 
 	@Override
-	public ArrayList<Empleado> ListaEmpleadosOrdenado(Criterio c, Comparator t) {
+	public ArrayList<Empleado> ListaEmpleadosOrdenado(Criterio c, Comparator<Empleado> t) {
 		ArrayList<Empleado> lista= new ArrayList<>();
 		for (Mensaje m:notificaciones) {
 			if (c.cumple(m)) {

@@ -6,9 +6,9 @@ import fileSystem.ElementFileSystem;
 
 public class ComparatorNot implements Comparator<ElementFileSystem> {
 
-	Comparator c1;
+	Comparator<ElementFileSystem> c1;
 	
-	public ComparatorNot(Comparator c) {
+	public ComparatorNot(Comparator<ElementFileSystem> c) {
 		this.c1=c;
 	}
 	

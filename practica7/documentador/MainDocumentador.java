@@ -1,6 +1,5 @@
 package documentador;
 
-import documentador.criterios.*;
 
 public class MainDocumentador {
 

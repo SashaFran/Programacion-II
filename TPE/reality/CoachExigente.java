@@ -1,14 +1,21 @@
 package reality;
 
+import reality.Criterios.Criterio;
 
 public class CoachExigente extends Coach {
 
-	public CoachExigente(String nombre, String apellido) {
+	private Criterio c;
+	
+	public CoachExigente(String nombre, String apellido, Criterio c) {
 		super(nombre, apellido);
-		// TODO Auto-generated constructor stub
+		this.c = c;
 	}
 	
-	//addEquipo
-	//if instrumento
+	public void addAlEquipo(ElementoReality p){
+		if (c.cumple(p)) {
+			super.addAlEquipo(p);
+		}
+	}
 
+	
 }

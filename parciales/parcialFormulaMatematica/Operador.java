@@ -1,4 +1,4 @@
-
+package parcialFormulaMatematica;
 public abstract class Operador {
 
 	protected String simbolo;

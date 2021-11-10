@@ -1,11 +1,11 @@
 package sistemaElectoral;
 
+
 public class Candidato implements Comparable<Candidato>{
+	
 	private String nombre;
 	private String partido_politico;
 	private String agrupacion;
-	
-	
 	
 	public Candidato(String n, String parti, String agru) {
 		this.nombre=n;
@@ -13,7 +13,7 @@ public class Candidato implements Comparable<Candidato>{
 		this.agrupacion=agru;
 	}
 	
-	
+
 	
 	public String getNombre() {
 		return nombre;
@@ -42,7 +42,9 @@ public class Candidato implements Comparable<Candidato>{
 
 	@Override
 	public String toString() {
-		return "Candidato [nombre=" + nombre + ", partido_politico=" + partido_politico + ", agrupacion=" + agrupacion
+		return "\nnombre=" + nombre + ", "
+				+ "\npartido politico=" + partido_politico + ", "
+				+ "\nagrupacion=" + agrupacion
 				+ "]";
 	}
 

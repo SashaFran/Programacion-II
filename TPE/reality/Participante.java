@@ -1,15 +1,14 @@
 package reality;
 
 import java.time.LocalDate;
-import java.time.Period;
 import java.util.ArrayList;
 
-//equals 
+import reality.Criterios.Criterio;
 
-public class Participante {
+
+public class Participante extends ElementoReality{
 
 	private String nombre, apellido;
-	//private int edad;
 	private LocalDate fechaDeNacimiento;
 	private ArrayList<String> generosFav;
 	private ArrayList<String> instrumentos;
@@ -25,11 +24,9 @@ public class Participante {
 		idiomas = new ArrayList<>();
 	}
 	
-	//Lo hice asi porque de esta forma es actualizable a traves del tiempo
-	public int getEdad(){
-		LocalDate ahora = LocalDate.now();
-	    Period periodo = Period.between(fechaDeNacimiento, ahora);
-	    return periodo.getYears();
+	public int getSumaEdad(){
+		LocalDate today = LocalDate.now();
+	      return today.getYear() - fechaDeNacimiento.getYear();
 	}
 
 	public String getNombre() {
@@ -43,17 +40,29 @@ public class Participante {
 	public LocalDate getFechaDeNacimiento() {
 		return fechaDeNacimiento;
 	}
-
-	public ArrayList<String> getGenerosFav() {
-		return new ArrayList<String>(generosFav);
+	
+	public boolean contieneGenero(String g){
+		return this.generosFav.contains(g);
+	}
+	
+	public boolean contieneIdioma(String g){
+		return this.idiomas.contains(g);
+	}
+	
+	public boolean contieneInstrumento(String g){
+		return this.instrumentos.contains(g);
 	}
 
 	public ArrayList<String> getInstrumentos() {
 		return new ArrayList<String>(instrumentos);
 	}
 	
+	public ArrayList<String> getIdiomas() {
+		return new ArrayList<String>(idiomas);
+	}
+
 	public void addGenero(String gf){
-		if (generosFav.contains(gf)){
+		if (!generosFav.contains(gf)){
 			generosFav.add(gf);
 		}
 	}
@@ -70,8 +79,46 @@ public class Participante {
 		}
 	}
 	
-	public String toString(){
-		return "Participante: "+ this.getNombre()+" "+this.getApellido()+"\nEdad: "+this.getEdad();
+	public int cantPart(){
+		return 1;
 	}
+
+	@Override
+	public ArrayList<String> getGeneros() {
+		return new ArrayList<String>(generosFav);
+	}
+	
+	@Override
+	public ArrayList<ElementoReality> partxFiltro(Criterio f) {
+		ArrayList<ElementoReality> p = new ArrayList<>();
+        if (f.cumple(this))
+            p.add(this);
+        return p;
+	}
+	
+	
+	
+	
+	
+	//------------------------------------------------------------------------------------------------------
+	@Override
+	public boolean equals(Object obj) {
+		try{
+			Participante p = (Participante) obj;
+			return this.getNombre().equals(p.getNombre()) 
+					&& this.getApellido().equals(p.getApellido())
+					&& this.getInstrumentos().equals(p.getInstrumentos()) 
+					&& this.getIdiomas().equals(p.getIdiomas())
+					&& this.getGeneros().equals(p.getGeneros());
+		}catch(Exception e){
+			return false;
+		}
+	}
+	
+	public String toString(){
+		return "Nombre y Apellido: "+ this.getNombre()+" "+this.getApellido()+"\n";
+	}
+
+
 	
 }

@@ -15,7 +15,7 @@ public class Main {
 		Empleado e4= new Empleado("nesti", "santomil", 25,69);
 		Criterio criterio1= new CriterioContienePalabra("familia");
 		Grupo familia= new Grupo("familia",criterio1 );
-		Comparator comparatorEdad= new ComparatorEdad();
+		Comparator<Empleado> comparatorEdad= new ComparatorEdad();
 		familia.agregarHijo(e1);
 		familia.agregarHijo(e2);
 		familia.agregarHijo(e3);

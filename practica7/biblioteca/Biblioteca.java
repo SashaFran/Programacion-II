@@ -22,6 +22,7 @@ public class Biblioteca {
 	}
 
 	public ArrayList<Libro> mostrarLibros_porDefecto() {
+		@SuppressWarnings("unchecked")
 		ArrayList<Libro> copia= (ArrayList<Libro>) libros.clone();
 		Collections.sort(copia);
 		return copia;
@@ -29,6 +30,7 @@ public class Biblioteca {
 	
 	//modificar el ordenar
 	public ArrayList<Libro> ordenarLibros_porXCriterio(Comparator<Libro> Comparador ) {
+		@SuppressWarnings("unchecked")
 		ArrayList<Libro> copia=(ArrayList<Libro>) libros.clone();
 		Collections.sort(copia,Comparador);
 		return copia;

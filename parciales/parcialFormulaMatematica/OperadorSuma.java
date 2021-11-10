@@ -1,4 +1,4 @@
-
+package parcialFormulaMatematica;
 public class OperadorSuma extends Operador {
 
 	public OperadorSuma() {
