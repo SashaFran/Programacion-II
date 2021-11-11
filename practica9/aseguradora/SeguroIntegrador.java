@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 
+//SeguroCompuesto
 public class SeguroIntegrador extends Seguro{
 
     private ArrayList<Seguro> elementos;
@@ -47,14 +48,8 @@ public class SeguroIntegrador extends Seguro{
     }
 
     @Override
-    public ArrayList<SeguroSimple> segurosQueCumplen(Filtro condicion,
-                                                     Comparator<SeguroSimple> orden) {
+    public ArrayList<SeguroSimple> segurosQueCumplen(Filtro condicion, Comparator<SeguroSimple> orden) {
         ArrayList<SeguroSimple> aux = new ArrayList<>();
-        //Lo que NO tienen que hacer
-        //for (Seguro s:elementos){
-        //    if (condicion.cumple(s))
-        //        aux.add(s);
-        //}
         for (Seguro s:elementos){
             aux.addAll(s.segurosQueCumplen(condicion, orden));
         }
