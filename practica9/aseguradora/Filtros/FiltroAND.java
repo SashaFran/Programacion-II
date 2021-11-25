@@ -1,6 +1,7 @@
 package aseguradora.Filtros;
 
 import aseguradora.SeguroSimple;
+import aseguradora.Filtros.Filtro;
 
 public class FiltroAND extends Filtro{
     private Filtro f1, f2;

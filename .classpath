@@ -4,20 +4,15 @@
 	<classpathentry kind="src" path="clase 28_09"/>
 	<classpathentry kind="src" path="practica7"/>
 	<classpathentry kind="src" path="clase20210930"/>
-	<classpathentry kind="src" path="parciales"/>
 	<classpathentry kind="src" path="practica8"/>
 	<classpathentry kind="src" path="tpe"/>
 	<classpathentry kind="src" path="practica9"/>
 	<classpathentry kind="src" path="empresa"/>
-	<classpathentry kind="src" path="parcial2021"/>
 	<classpathentry kind="src" path="parcialito4"/>
-	<classpathentry kind="src" path="Parcial2020"/>
-	<classpathentry kind="src" path="Prefinal2020"/>
 	<classpathentry kind="src" path="adicionalPractica"/>
-	<classpathentry kind="src" path="Parcial2019"/>
-	<classpathentry kind="src" path="Parcial2020SIS"/>
 	<classpathentry kind="src" path="Strategy"/>
 	<classpathentry kind="src" path="adicional"/>
+	<classpathentry kind="src" path="PracticaParcial"/>
 	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

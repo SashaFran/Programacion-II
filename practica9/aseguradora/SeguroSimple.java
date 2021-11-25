@@ -1,6 +1,6 @@
 package aseguradora;
 import aseguradora.Calculadores.CalculadorCosto;
-import aseguradora.Filtros.Filtro;
+import aseguradora.Filtros.*;
 
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -39,16 +39,16 @@ public class SeguroSimple extends Seguro{
         return montoAsegurado;
     }
 
-    @Override
-    public ArrayList<SeguroSimple> segurosQueCumplen(Filtro condicion, Comparator<SeguroSimple> orden) {
+    public void cambiarCalculador(CalculadorCosto nuevo){
+        this.calculador = nuevo;
+    }
+
+	@Override
+	public ArrayList<SeguroSimple> segurosQueCumplen(Filtro condicion, Comparator<SeguroSimple> orden) {
         ArrayList<SeguroSimple> retorno = new ArrayList<>();
         if (condicion.cumple(this))
             retorno.add(this);
         return retorno;
-    }
-
-    public void cambiarCalculador(CalculadorCosto nuevo){
-        this.calculador = nuevo;
-    }
+	}
 
 }

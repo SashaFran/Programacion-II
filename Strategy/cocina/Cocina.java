@@ -34,4 +34,9 @@ public class Cocina {
                 aceptaTodo.tomarComida(comida);
         }
     }
+
+	public String getNombre() {
+		return nombre;
+	}
+
 }
