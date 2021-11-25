@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="Parcial2019"/>
+	<classpathentry kind="src" path="Prefinal2020"/>
+	<classpathentry kind="src" path="Parcial2020"/>
+	<classpathentry kind="src" path="ParcialSIS"/>
+	<classpathentry kind="src" path="Parcial2021"/>
+	<classpathentry kind="src" path="ParcialAseguradora"/>
+	<classpathentry kind="src" path="ParcialComarcas"/>
+	<classpathentry kind="src" path="ParcialFrancisco"/>
+	<classpathentry kind="src" path="ParcialSistemaPostal"/>
+	<classpathentry kind="src" path="ParcialSistemaComunicados"/>
+	<classpathentry kind="src" path="Recuperatorio2020"/>
+	<classpathentry kind="src" path="Recuperatorio2021"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
